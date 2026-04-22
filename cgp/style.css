@@ -558,4 +558,171 @@ button {
   .detail-text h1 {
     font-size: 40px;
   }
+  @media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 32px 60px;
+  }
+
+  .hero-image {
+    align-self: center;
+    width: 320px;
+    height: 320px;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+    line-height: 0.95;
+  }
+
+  .detail-page {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 40px 32px 60px;
+  }
+
+  .detail-image-box {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    align-self: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 18px 20px;
+    gap: 14px;
+  }
+
+  .nav-center {
+    position: static;
+    transform: none;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .nav-right {
+    margin-left: auto;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav-note {
+    font-size: 13px;
+  }
+
+  .cta,
+  .button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .hero {
+    padding: 24px 20px 50px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+
+  .tagline {
+    font-size: 17px;
+  }
+
+  .quote-info {
+    font-size: 13px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-image::before {
+    width: 320px;
+    height: 320px;
+  }
+
+  .logo img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .detail-page {
+    padding: 24px 20px 50px;
+  }
+
+  .detail-text h1 {
+    font-size: 40px;
+  }
+
+  .detail-description {
+    font-size: 16px;
+  }
+
+  .detail-actions {
+    flex-wrap: wrap;
+  }
+
+  .detail-gallery {
+    padding: 0 20px 50px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .detail-text h1 {
+    font-size: 34px;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 220px;
+  }
+}
 }
